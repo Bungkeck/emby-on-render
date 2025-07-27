@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: emby-server
+    env: docker
+    plan: starter
+    autoDeploy: false
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: TZ
+        value: Asia/Jakarta
